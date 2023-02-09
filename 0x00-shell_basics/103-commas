@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 $(ls -A | awk '{if (/^[^.]/) print; else if (/^\.[^.]/) print}' | sort -t. -k1,1n -k2) | awk '{if ($1 ~ /^[0-9A-Za-z]+/) print; else if (/\/$/) print}' | tr '\n' ',' | sed 's/,$/\n/'
+ls -1 $(ls -A | awk '{if (/^[^.]/) print else if (/^\.[^.]/) print}' | sort -t. -k1,1n -k2) | awk '{if ($1 ~ /^[0-9A-Za-z]+/) print else if (/\/$/) print}' | tr '\n' ',' | sed 's/,$/\n/'
