@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A --group-directories-first --ignore=.* | awk '{if ($0 ~ /\/$/) {gsub(/\//, ""); print $0} else if ($0 !~ /^\./) {gsub(/\//, ""); print $0 "/"}}' | sort -n -k 1.2 | paste -sd, - && echo
