@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Abracadabra" | tr 'Ac' 'Ze'
+tr 'Ac' 'Ze'

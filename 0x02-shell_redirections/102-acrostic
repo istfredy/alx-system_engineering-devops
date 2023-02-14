@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" "$(tr -d '\n' < <(cut -c1 acrostic.txt))"
+paste -d "" <( | fold -w1)| head -n1
