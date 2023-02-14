@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "un deux deux trois quatre quatre quatre cinq cinq cinq cinq six six six six six" | tr ' ' '\n' | sort | uniq -c | grep -E '^\s+1\s+' | tr -s ' ' | cut -d' ' -f3- | sort
