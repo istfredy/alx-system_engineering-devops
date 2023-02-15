@@ -1,2 +1,2 @@
 #!/bin/bash 
-{ declare -p;  declare -F; } | cat -n
+{ declare -p -F } | cat -n
